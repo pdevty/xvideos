@@ -5,19 +5,20 @@
 //  package main
 //
 //  import (
-// 		"fmt"
-// 		"github.com/pdevty/xvideos"
-// 		"log"
+// 	  "fmt"
+// 	  "github.com/pdevty/xvideos"
+// 	  "log"
 //  )
 //
 //  func main() {
-// 		xv, err := xvideos.Get("http://jp.xvideos.com/c/asian_woman-32/")
-// 		if err != nil {
-// 			log.Fatal(err)
-// 		}
-//  	for _, v := range xv {
-// 			fmt.Println(v.Id, v.Url, v.Duration, v.Rating, v.Thumbnail, v.Title, v.Tags)
-// 		}
+//    // url to be set xvideos list page
+// 	  xv, err := xvideos.Get("http://jp.xvideos.com/c/asian_woman-32/")
+// 	  if err != nil {
+// 	    log.Fatal(err)
+// 	  }
+//    for _, v := range xv {
+// 	    fmt.Println(v.Id, v.Url, v.Duration, v.Rating, v.Thumbnail, v.Title, v.Tags)
+// 	  }
 //  }
 package xvideos
 
@@ -29,7 +30,7 @@ import (
 	"strings"
 )
 
-// get func return struct
+// get func return xvideo data struct
 type Xvideo struct {
 	Id        string
 	Title     string
@@ -40,7 +41,7 @@ type Xvideo struct {
 	Tags      []string
 }
 
-// get xvideos detail page tags
+// get xvideos tags
 func getTags(url string) (tags []string, err error) {
 	doc, err := goquery.NewDocument(url)
 	if err != nil {
@@ -57,7 +58,7 @@ func getTags(url string) (tags []string, err error) {
 	return tags, nil
 }
 
-// get xvideos list page information
+// get xvideos information. url to be set xvideos list page
 func Get(rawurl string) (xvideos []Xvideo, err error) {
 	u, err := url.Parse(rawurl)
 	if err != nil {

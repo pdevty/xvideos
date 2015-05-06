@@ -1,4 +1,4 @@
-# xvideos
+# xvideos [![GoDoc](https://godoc.org/github.com/pdevty/xvideos?status.svg)](https://godoc.org/github.com/pdevty/xvideos)
 
 This package scrapes the HTML of xvideos.com and gives you information you can use in your go programs
 
@@ -20,6 +20,7 @@ import (
 )
 
 func main() {
+	// url to be set xvideos list page
 	xv, err := xvideos.Get("http://jp.xvideos.com/c/asian_woman-32/")
 	if err != nil {
 		log.Fatal(err)
@@ -30,7 +31,7 @@ func main() {
 }
 ```
 
-Refer to [godoc documentation](https://affiliate.dmm.com/api/guide/) for more infomation.
+Refer to [godoc](http://godoc.org/github.com/pdevty/xvideos) for more infomation.
 
 ## Contributing
 
