@@ -5,20 +5,20 @@
 //  package main
 //
 //  import (
-// 	  "fmt"
-// 	  "github.com/pdevty/xvideos"
-// 	  "log"
+// 		"fmt"
+// 		"github.com/pdevty/xvideos"
+// 		"log"
 //  )
 //
 //  func main() {
-//    // url to be set xvideos list page
-// 	  xv, err := xvideos.Get("http://jp.xvideos.com/c/asian_woman-32/")
-// 	  if err != nil {
-// 	    log.Fatal(err)
-// 	  }
-//    for _, v := range xv {
-// 	    fmt.Println(v.Id, v.Url, v.Duration, v.Rating, v.Thumbnail, v.Title, v.Tags)
-// 	  }
+//  	// url to be set xvideos list page
+// 		xv, err := xvideos.Get("http://jp.xvideos.com/c/asian_woman-32/")
+// 		if err != nil {
+// 			log.Fatal(err)
+// 		}
+//  	for _, v := range xv {
+// 			fmt.Println(v.Id, v.Url, v.Duration, v.Rating, v.Thumbnail, v.Title, v.Tags)
+// 		}
 //  }
 package xvideos
 
