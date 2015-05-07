@@ -1,4 +1,4 @@
-# xvideos [![GoDoc](https://godoc.org/github.com/pdevty/xvideos?status.svg)](https://godoc.org/github.com/pdevty/xvideos)
+# xvideos [![GoDoc](https://godoc.org/github.com/pdevty/xvideos?status.svg)](https://godoc.org/github.com/pdevty/xvideos) [![Build Status](https://travis-ci.org/pdevty/xvideos.svg)](https://travis-ci.org/pdevty/xvideos) [![Coverage Status](https://coveralls.io/repos/pdevty/xvideos/badge.svg)](https://coveralls.io/r/pdevty/xvideos)
 
 This package scrapes the HTML of xvideos.com and gives you information you can use in your go programs
 
